@@ -1,0 +1,482 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-style: sans-serif;
+    background-color: whitesmoke;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    position: fixed;
+    z-index: 1000;
+    /* Устанавливает плавающий элемент поверх другого содержимого */
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Тень для выделения навигационной панели */
+    font-size: 25px;
+
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 5px;
+    cursor: pointer;
+    color: #696969;
+}
+
+.nav ul li:hover {
+    color: black;
+    border-bottom: solid black 1px;
+}
+
+.nav ul li:not(:first-child)::before {
+    content: "•";
+    /* Текстовый символ точки */
+    margin-right: 5px;
+    /* Расстояние между точкой и текстом */
+}
+
+.logo img {
+    width: 120px;
+    height: 50px;
+}
+
+.zagolovok {
+    background: rgb(0, 0, 0);
+    /* Задаем цвет фона */
+    margin-top: 5%;
+    height: 500px;
+
+
+    text-align: justify;
+
+
+    color: white;
+    text-align: center;
+    padding: 100px 400px 100px 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(8, 8, 8, 0.5)), url('../img/monitor-0-min.jpg');
+    background-size: cover;
+    /* Растягивает изображение на всю область */
+    background-position: center;
+    /* Выравнивает изображение по центру */
+    background-repeat: no-repeat;
+    /* Запрещает повтор изображения */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+    /* Добавление тени */
+
+}
+
+.zglv {
+    align-items: center;
+}
+
+
+
+
+
+.glavzag h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.predzag {
+    margin-bottom: 20px;
+}
+
+.predzag p {
+    font-size: 30px;
+}
+
+.btn {
+    background-color: #0165a3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Добавление тени */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Анимация при наведении */
+
+}
+
+.btn_zg p{
+    font-size: 30px;
+}
+
+.btn:hover {
+    background-color: #009dff;
+    transform: translateY(-2px);
+    /* Эффект поднятия кнопки */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    /* Увеличение тени при наведении */
+}
+
+.btn p {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+
+
+.podzag {
+    margin-top: 20px;
+}
+
+.akzia {
+    text-align: center;
+    /* Центрирование содержимого блока .akzia */
+    background-color: whitesmoke;
+}
+
+.zag_ak,
+.naz_ak,
+.comp_ak {
+    margin: 0 auto;
+    /* Выравнивание по центру */
+    max-width: 600px;
+    /* Максимальная ширина блока */
+}
+
+.zag_ak {
+    font-size: 30px;
+
+}
+
+.naz_ak {
+    align-items: center;
+    margin: auto 200px;
+    max-width: 100%;
+    font-size: 20px;
+}
+
+.btn {
+    position: relative;
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: #1e88e5;
+    /* Цвет фона кнопки при наведении */
+}
+
+.poch_us {
+    text-align: center;
+    /* Центрируем текст по центру */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Черный полупрозрачный фон */
+    padding: 20px;
+    /* Внутренние отступы для содержимого */
+    
+    /* Внешние отступы вокруг блока */
+    color: #fff;
+    /* Цвет текста белый */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(8, 8, 8, 0.5)), url('../img/monitor-0-min.jpg');
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.poch_us h1{
+    font-size: 50px;
+}
+
+.poch_us p{
+    font-size: 30px;
+}
+
+
+.preim {
+    display: flex;
+    /* Используем flexbox для выравнивания значков */
+    justify-content: space-around;
+    /* Равномерное распределение значков по ширине */
+    background-size: cover;
+}
+
+.preim div {
+    width: 100px;
+    height: 100px;
+    
+    /* Цвет фона значков */
+    color: #fff;
+    /* Цвет иконок */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+.pram div{
+    border: solid whitesmoke 5px;
+    border-radius: 100px;
+    height: 160px;
+    width: 160px;
+}
+
+.comp_ak {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 100%;
+    border: solid #3f51b55b 1px;
+    padding: 2px;
+    background-color: white;
+    box-shadow: -3px 2px 18px 2px #3f51b538;
+    border-radius: 10px;
+    margin: 100px 200px;
+}
+
+.comp_ak img {
+    width: 500px;
+}
+
+.comp_ak h2{
+    font-size: 30px;
+}
+
+.comp_ak li,p,h3{
+    font-size: 18px;
+}
+
+.comp_ak h3{
+    font-size: 27px;
+}
+
+.katalog {
+    text-align: center;
+    margin: 20px;
+}
+
+.katal_comp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.comp_ak_zag p{
+    margin: 10px auto;
+}
+.comp_ak_zag div{
+    margin: 15px auto;
+    
+}
+
+.katalog h1{
+    font-size: 60px;
+}
+.katalog p{
+    font-size: 30px;
+}
+
+
+
+.comp {
+    width: 22%;
+    /* Ширина каждого компьютера - 22% для 4 в ряд */
+    margin: 10px;
+    background-color: #f9f9f9;
+    /* Цвет фона блока компьютера */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.comp img {
+    
+    /* Максимальная ширина изображения компьютера */
+    margin: 0 auto 10px;
+    /* Центрирование изображения */
+}
+
+.btn {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.katalog {
+    text-align: center;
+    margin: 20px;
+}
+
+.katal_comp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 200px ;
+}
+
+.comp {
+    width: 22%;
+    /* Ширина каждого компьютера - 22% для 4 в ряд */
+    margin: 10px;
+    background-color: #ffffff;
+    /* Цвет фона блока компьютера */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: -3px 2px 18px 2px #00000038;
+}
+
+.comp img {
+    width: 300px;
+    height: 300px;
+    /* Максимальная ширина изображения компьютера */
+    margin: 0 auto 10px;
+    /* Центрирование изображения */
+}
+
+.comp h4{
+    font-size: 30px;
+}
+
+.comp p{
+    font-size: 25px;
+}
+
+.comp h3{
+    font-size: 27px;
+}
+
+.btn {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback {
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.feedback h1,
+.feedback p {
+    margin-bottom: 20px;
+}
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.client {
+    
+    /* Ширина каждого компьютера - 22% для 4 в ряд */
+    margin: 10px;
+    background-color: #ffffff;
+    /* Цвет фона блока компьютера */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: -3px 2px 18px 2px #00000038;
+}
+
+.about_us {
+    text-align: center;
+    /* Центрируем текст по центру */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Черный полупрозрачный фон */
+    padding: 20px;
+    /* Внутренние отступы для содержимого */
+    
+    /* Внешние отступы вокруг блока */
+    color: #fff;
+    /* Цвет текста белый */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(8, 8, 8, 0.5)), url('../img/monitor-0-min.jpg');
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+.about_us p{
+    margin:  auto 300px;
+    font-size: 25px;
+   
+}
+.navbar_end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    
+    z-index: 1000;
+    /* Устанавливает плавающий элемент поверх другого содержимого */
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Тень для выделения навигационной панели */
+    font-size: 15px;
+}
+.nav_contact ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_contact ul li {
+    display: inline;
+    margin-right: 5px;
+    cursor: pointer;
+    color: #e0e0e0;
+}
+
+.nav_contact ul li:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: solid black 1px;
+}
+
+.nav_contact ul li:not(:first-child)::before {
+    content: "•";
+    /* Текстовый символ точки */
+    margin-right: 5px;
+    /* Расстояние между точкой и текстом */
+}
+
+
